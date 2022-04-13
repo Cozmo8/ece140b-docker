@@ -3,20 +3,6 @@ from pyramid.config import Configurator
 from pyramid.response import Response, FileResponse
 from pyramid.renderers import render_to_response
 
-from dotenv import load_dotenv
-import mysql.connector as mysql
-import os
-
-load_dotenv('credentials.env')
- 
-db_host = os.environ['MYSQL_HOST']
-db_user = os.environ['MYSQL_USER']
-db_pass = os.environ['MYSQL_PASSWORD']
-db_name = os.environ['MYSQL_DATABASE']
-
-db = mysql.connect(user=db_user, password=db_pass, host=db_host, database=db_name)
-cursor = db.cursor(buffered=True)
-
 def get_home(req):
     return FileResponse("templates/home.html")
 
