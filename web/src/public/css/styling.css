@@ -1,0 +1,33 @@
+.hero {
+    background: #00008b;
+    color: white;
+    padding: calc(.5rem + 1vh) calc(.5rem + 1vw) calc(.5rem + 1vh) calc(.5rem + 1vw);
+}
+
+.divider {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: .1em;
+    margin: 10px 0 20px; 
+}
+
+.divider > span {
+    background:#fff; 
+    padding:0 10px; 
+}
+
+.members {
+    grid-gap:1rem;
+    display:grid;
+    grid-template-rows:auto;
+    grid-template-columns:repeat(4, minmax(0, 1fr));
+    margin:1rem .5rem;
+}
+
+.members > div {
+    background: #eee;
+    border: 1px solid #888;
+    font-size:1rem;
+    padding:1rem;
+}
