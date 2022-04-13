@@ -19,7 +19,7 @@ services:
     env_file:
       ./credentials.env
     ports:
-      - 3307:3306 
+      - 3306:3306 
     volumes:
       - ./db:/var/lib/mysql 
     container_name: agile-db
