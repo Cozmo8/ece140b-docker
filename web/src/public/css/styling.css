@@ -17,6 +17,10 @@
     padding:0 10px; 
 }
 
+p {
+    margin:1rem 0rem;
+}
+
 .members {
     grid-gap:1rem;
     display:grid;
