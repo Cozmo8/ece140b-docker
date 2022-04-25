@@ -9,7 +9,7 @@
     text-align: center; 
     border-bottom: 1px solid #000; 
     line-height: .1em;
-    margin: 10px 10px; 
+    margin: 10px .5vw; 
 }
 
 .divider > span {
