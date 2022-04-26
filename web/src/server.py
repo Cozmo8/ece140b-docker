@@ -7,10 +7,16 @@ import os
 def get_home(req):
     return FileResponse("templates/home.html")
 
+def get_product(req):
+    return FileResponse("templates/product.html")
+
 if __name__ == '__main__':
   with Configurator() as config:
     config.add_route('home', '/')
     config.add_view(get_home, route_name='home')
+
+    config.add_route('product', '/product')
+    config.add_view(get_product, route_name='product')
 
     config.add_static_view(name='/', path='./public', cache_max_age=3600)
     app = config.make_wsgi_app()
