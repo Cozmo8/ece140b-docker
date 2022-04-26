@@ -48,6 +48,7 @@
 }
 
 .divider > span {
+    font-size:24px;
     background:#fff; 
     padding:0 10px; 
 }
