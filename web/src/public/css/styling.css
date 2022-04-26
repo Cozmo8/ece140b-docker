@@ -9,9 +9,9 @@
     color: white;
     margin: 5px;
     padding: 5px;
-    font-size: 16px;
+    font-size: 8px;
     border: none;
-  }
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -30,9 +30,15 @@
     text-decoration: none;
     display: block;
 }
-.dropdown-content > a:hover {background-color: #ddd;}
-.dropdown:hover > .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: #3d88ce;}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3d88ce;
+}
 
 .divider {
     width: 100%; 
