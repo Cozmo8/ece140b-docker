@@ -16,6 +16,9 @@ def get_proposition(req):
 def get_team(req):
     return FileResponse("templates/team.html")
 
+def get_assignments(req):
+    return FileResponse("templates/assignments.html")
+
 if __name__ == '__main__':
   with Configurator() as config:
     config.add_route('home', '/')
@@ -29,6 +32,9 @@ if __name__ == '__main__':
 
     config.add_route('team', '/team')
     config.add_view(get_team, route_name='team')
+
+    config.add_route('assignments', '/assignments')
+    config.add_view(get_assignments, route_name='assignments')
 
     config.add_static_view(name='/', path='./public', cache_max_age=3600)
     app = config.make_wsgi_app()
